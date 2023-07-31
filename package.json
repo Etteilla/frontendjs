@@ -1,0 +1,51 @@
+{
+  "name": "frontendjs",
+  "version": "0.0.1",
+  "description": "React components for Etteilla Foundation playing cards collection website.",
+  "author": "Etteilla Foundation",
+  "license": "Apache2",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "private": true,
+  "homepage": "https://etteilla.org/",
+  "bugs": "https://github.com/etteilla/etteilla/issues",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/etteilla/frontendjs.git",
+    "directory": "dist/"
+  },
+  "files": [
+    "/dist"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "build:watch": "tsc --watch"
+  },
+  "keywords": [
+    "tarot",
+    "playing cards",
+    "oracle",
+    "cards",
+    "museum",
+    "react"
+  ],
+  "dependencies": {
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
+    "algoliasearch": "4.19.1",
+    "react-instantsearch-dom": "6.40.3"
+  },
+  "devDependencies": {
+    "@rollup/plugin-node-resolve": "^13.3.0",
+    "@rollup/plugin-replace": "^5.0.2",
+    "@types/react": "^18.2.17",
+    "@types/react-dom": "^18.2.7",
+    "eslint": "^8.15.0",
+    "prettier": "^2.6.2",
+    "rimraf": "^3.0.2",
+    "rollup": "^2.73.0",
+    "rollup-plugin-summary": "^1.4.3",
+    "rollup-plugin-terser": "^7.0.2",
+    "typescript": "5.1.6"
+  }
+}

@@ -1,0 +1,14 @@
+{
+    "en": "English",
+    "fr": "French",
+    "subscribe": {
+        "errorMessage": "Error - please check your email address.",
+        "successMessage": "You are now subscribed to our newsletter.",
+        "sendingMessage": "Subscribing...",
+        "subscribeMessage": "Join",
+        "subscribedMessage": "Subscribed!"
+    }
+    
+
+
+}

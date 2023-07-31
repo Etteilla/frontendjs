@@ -1,0 +1,11 @@
+{
+    "en": "Anglais",
+    "fr": "Francais",
+    "subscribe": {
+        "errorMessage": "Erreur - Verifiez votre adresse email",
+        "successMessage": "Vous êtes inscrit à notre newsletter.",
+        "sendingMessage": "Inscription en cours",
+        "subscribeMessage": "S'inscrire",
+        "subscribedMessage": "Inscris!"
+    }
+}
