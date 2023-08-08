@@ -41,7 +41,8 @@
     "algoliasearch": "4.19.1",
     "react": "18.2.0",
     "react-dom": "18.2.0",
-    "react-instantsearch-dom": "6.40.3"
+    "react-instantsearch-dom": "6.40.3",
+    "react-shadow-root": "^6.2.0"
   },
   "devDependencies": {
     "@rollup/plugin-node-resolve": "^13.3.0",
