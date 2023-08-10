@@ -7,16 +7,17 @@ import * as fr from "../translations/fr.json";
 // import twind from '../twind';
 import { cssom, twind } from "@twind/core";
 import config from '../twind.config';
+import { Tab } from '@headlessui/react';
 
 // Use sheet and config to create an twind instance. `tw` will
 // append the right CSS to our custom stylesheet.
 const sheet = cssom(new CSSStyleSheet());
 const tw = twind(config, sheet);
 
-
 interface TabsProps {
     currentLang: string
     container: string
+    apiKey: string
 }
 
 interface TabsState {
@@ -48,8 +49,8 @@ export class EtteillaTabs extends Component<TabsProps, TabsState> {
     
     override state: TabsState = {
         tabs: [
-            { name: 'By Archetype', href: '#', current: true, key: "tabs-archetype" },
-            { name: 'By Family', href: '#', current: false, key: "tabs-family" },
+            { name: 'By Archetype', href: '#', current: true, key: "tabs-archetype"},
+            { name: 'By Family', href: '#', current: false, key: "tabs-family"},
             { name: 'By Country', href: '#', current: false, key: "tabs-country"},
             { name: 'By Manufacturer', href: '#', current: false, key: "tabs-manufacturer"},
         ]
@@ -70,6 +71,22 @@ export class EtteillaTabs extends Component<TabsProps, TabsState> {
             }
         })
         this.setState({tabs: tabs})
+    }
+
+    override componentDidMount(): void {
+        this.init();
+    }
+
+    init() {
+        this.state.tabs.forEach( (tab:Tab) => {
+            if (tab.url !== "") {
+                let completeUrl = tab.url + "?key=" + this.props.apiKey
+                fetch(completeUrl, { method: "GET" }).then(resp => {
+                    console.log(resp.json())
+                })
+            
+            }
+        });
     }
 
     override render() {
