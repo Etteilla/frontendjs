@@ -82,7 +82,7 @@ export class EtteillaHorizontalDeckList extends Component<DeckListProps, DeckLis
                                                 itemProp="contentUrl" alt={deck.name} decoding="auto" loading="eager" width="220" height=""
                                                 src={deck.images.base} sizes="(max-width: 768px) 100vw, 33vw"
                                                 srcSet={deck.images.jpeg}
-                                                className={tw("rounded-md bg-gray-500 object-cover object-center")} />
+                                                className={tw("rounded-md bg-gray-500 object-cover object-center w-full md:w-full lg:w-80 xl:w-64" )} />
                                         </picture>
                                     </div>
                                 }
