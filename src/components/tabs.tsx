@@ -96,7 +96,7 @@ export class EtteillaTabs extends Component<TabsProps, TabsState> {
     }
 
     classNames(tab: Tab) {
-        let classes = tab.current ? 'border-stone-800 text-stone-800' : 'border-transparent text-stone-800 hover:text-purple-500'
+        let classes = tab.current ? 'border-gray-800 text-gray-800' : 'border-transparent text-gray-800 hover:text-purple-500'
         return classes + ' whitespace-nowrap py-4 px-1 text-base font-medium hover:cursor-pointer relative'
     }
     selectTab(selectedTabIndex: number) {
@@ -128,7 +128,7 @@ export class EtteillaTabs extends Component<TabsProps, TabsState> {
                     <select
                         id="tabs"
                         name="tabs"
-                        className={tw("block w-full rounded-md border-stone-300 py-2 pl-3 pr-10 text-base focus:border-purple-500 focus:outline-none focus:ring-purple-500 sm:text-sm")}
+                        className={tw("block w-full rounded-md border-gray-300 py-2 pl-3 pr-10 text-base focus:border-purple-500 focus:outline-none focus:ring-purple-500 sm:text-sm")}
                         defaultValue="tabs[0].name"
                         onChange={this.switchTab}>
                         {this.state.tabs.map((tab, index) => (
@@ -157,7 +157,7 @@ export class EtteillaTabs extends Component<TabsProps, TabsState> {
                     </div>
                 </div>
                 <ul
-                    role="list" className={tw("grid grid-cols-1 gap-x-4 gap-y-8 md:grid-cols-2 sm:gap-x-6 lg:grid-cols-4 xl:gap-x-8 py-4")}>
+                    role="list" className={tw("grid grid-cols-1 gap-x-4 gap-y-8 md:grid-cols-2 sm:gap-x-6 lg:grid-cols-3 xl:grid-cols-4 xl:gap-x-8 py-4")}>
                     <AnimatePresence>
                         {this.state.currentList.map((item: any) => (
                             <EtteillaCard model={item} key={item.shortname + item.id} />

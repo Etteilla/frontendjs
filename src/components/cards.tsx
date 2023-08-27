@@ -48,10 +48,10 @@ export class EtteillaCard extends Component<EtteillaCardProps> {
                 key={this.props.model.name + this.props.model.id}
                 className={tw2("drop-shadow-lg hover:drop-shadow-2xl hover:cursor-pointer")}>
                 <a href={this.props.model.url}>
-                    <span className={tw2("absolute left-2 top-2 inline-flex items-center rounded-md bg-neutral-50 px-2 py-1 text-xs font-medium text-gray-900")}>
+                    <span className={tw2("absolute left-2 top-2 inline-flex items-center rounded-md bg-gray-50 px-2 py-1 text-xs font-medium text-gray-900")}>
                         {this.props.model.decks} deck{this.props.model.decks > 1 && "s"}
                     </span>
-                    <div className={tw2("group aspect-square block w-full overflow-hidden rounded-lg bg-zinc-900 mix-blend-overlay relative")}>
+                    <div className={tw2("group aspect-square block w-full overflow-hidden rounded-lg bg-gray-900 mix-blend-overlay relative")}>
                         {this.props.model.images &&
                             <picture>
                                 <source

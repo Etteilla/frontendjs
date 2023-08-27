@@ -63,7 +63,7 @@ export class EtteillaHorizontalDeckList extends Component<DeckListProps, DeckLis
                                     translateY: -2,
                                     transition: { duration: 0.2 },
                                 }}
-                                key={deck.id} className={tw("relative isolate flex flex-col gap-8 lg:flex-row items-start p-5 rounded-md bg-white ring-1 ring-gray-300 hover:drop-shadow-2xl hover:cursor-pointer")}
+                                key={deck.id} className={tw("relative isolate flex flex-col gap-8 md:flex-row items-center md:items-start lg:items-center p-5 rounded-md bg-white ring-1 ring-gray-300 hover:drop-shadow-2xl hover:cursor-pointer")}
                                 itemProp="itemListElement" itemScope itemType="https://schema.org/ListItem">
                                 <meta itemProp="position" content={(index + 1).toString()}></meta>
 
@@ -82,7 +82,7 @@ export class EtteillaHorizontalDeckList extends Component<DeckListProps, DeckLis
                                                 itemProp="contentUrl" alt={deck.name} decoding="auto" loading="eager" width="220" height=""
                                                 src={deck.images.base} sizes="(max-width: 768px) 100vw, 33vw"
                                                 srcSet={deck.images.jpeg}
-                                                className={tw("rounded-md bg-gray-500 object-cover object-center w-full md:w-full lg:w-80 xl:w-64" )} />
+                                                className={tw("rounded-md bg-gray-500 object-cover object-center w-full sm:w-full md:w-40 lg:w-60" )} />
                                         </picture>
                                     </div>
                                 }
@@ -98,7 +98,7 @@ export class EtteillaHorizontalDeckList extends Component<DeckListProps, DeckLis
                                                 transition: { duration: 0.2 },
                                             }}
                                             href={deck.deckType.url}
-                                            className={tw("relative z-10 rounded-md bg-purple-700 px-3 py-1.5 font-medium text-gray-50")}
+                                            className={tw("relative z-10 rounded-md bg-gray-200 px-3 py-1.5 font-medium text-gray-900 hover:bg-gray-300")}
                                         >
                                             {deck.deckType.name}
                                         </motion.a>
