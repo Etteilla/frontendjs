@@ -63,7 +63,7 @@ export class EtteillaHorizontalDeckList extends Component<DeckListProps, DeckLis
                                     translateY: -2,
                                     transition: { duration: 0.2 },
                                 }}
-                                key={deck.id} className={tw("relative isolate flex flex-col gap-8 md:flex-row items-center md:items-start lg:items-center p-5 rounded-md bg-white ring-1 ring-gray-300 hover:drop-shadow-2xl hover:cursor-pointer")}
+                                key={deck.id} className={tw("relative isolate flex flex-col gap-8 md:flex-row items-center md:items-start lg:items-center p-5 rounded-md bg-egray-50 ring-1 ring-gray-300 hover:drop-shadow-2xl hover:cursor-pointer")}
                                 itemProp="itemListElement" itemScope itemType="https://schema.org/ListItem">
                                 <meta itemProp="position" content={(index + 1).toString()}></meta>
 
